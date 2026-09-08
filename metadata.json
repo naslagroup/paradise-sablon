@@ -1,0 +1,6 @@
+{
+  "name": "Paradise Sablon & Konveksi",
+  "description": "Website resmi Paradise Sablon & Konveksi di Toroh, Kabupaten Grobogan. Layanan jasa sablon kaos profesional (Plastisol, DTF, Rubber) dan konveksi seragam, polo, hoodie, kemeja PDH berkualitas tinggi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
