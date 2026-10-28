@@ -124,37 +124,62 @@ Mohon informasi ketersediaan & jadwal produksinya ya. Terima kasih!`;
                 href={`https://wa.me/${PARADISE_INFO.whatsappRaw}?text=${encodeURIComponent('Halo Paradise Sablon, saya ingin bertanya tentang pemesanan...')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-blue-50/50 border-2 border-blue-100 hover:border-blue-600 p-4 rounded-2xl transition-all group flex items-center gap-3 shadow-xs"
+                className="sm:col-span-2 bg-white hover:bg-blue-50/50 border-2 border-blue-100 hover:border-blue-600 p-3.5 rounded-2xl transition-all group flex items-center justify-between shadow-xs"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
-                  <Phone className="w-5 h-5" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-[11px] font-black uppercase tracking-wider text-red-600">
+                      WhatsApp Chat
+                    </p>
+                    <p className="text-xs sm:text-sm font-black text-slate-950 group-hover:text-blue-700">
+                      {PARADISE_INFO.whatsappNumber}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-[11px] font-black uppercase tracking-wider text-red-600">
-                    WhatsApp Chat
-                  </p>
-                  <p className="text-xs sm:text-sm font-black text-slate-950 group-hover:text-blue-700">
-                    {PARADISE_INFO.whatsappNumber}
-                  </p>
-                </div>
+                <span className="hidden sm:inline-flex text-[11px] font-bold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  Chat WA &rarr;
+                </span>
               </a>
 
-              {/* Instagram Card */}
+              {/* Instagram Sablon Card */}
               <a
                 href={PARADISE_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white hover:bg-blue-50/50 border-2 border-blue-100 hover:border-blue-600 p-4 rounded-2xl transition-all group flex items-center gap-3 shadow-xs"
+                className="bg-white hover:bg-blue-50/50 border-2 border-blue-100 hover:border-blue-600 p-3.5 rounded-2xl transition-all group flex items-center gap-3 shadow-xs"
               >
                 <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center shrink-0 shadow-xs">
                   <InstagramIcon className="w-5 h-5 text-white" />
                 </div>
-                <div>
-                  <p className="text-[11px] font-black uppercase tracking-wider text-red-600">
-                    Instagram Resmi
+                <div className="min-w-0">
+                  <p className="text-[11px] font-black uppercase tracking-wider text-red-600 truncate">
+                    Instagram Sablon
                   </p>
-                  <p className="text-xs sm:text-sm font-black text-slate-950 group-hover:text-blue-700">
+                  <p className="text-xs sm:text-sm font-black text-slate-950 group-hover:text-blue-700 truncate">
                     {PARADISE_INFO.instagramHandle}
+                  </p>
+                </div>
+              </a>
+
+              {/* Instagram Industries Card */}
+              <a
+                href={PARADISE_INFO.instagramIndustriesUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-blue-50/50 border-2 border-blue-100 hover:border-blue-600 p-3.5 rounded-2xl transition-all group flex items-center gap-3 shadow-xs"
+              >
+                <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <InstagramIcon className="w-5 h-5 text-white" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[11px] font-black uppercase tracking-wider text-red-600 truncate">
+                    Instagram Industries
+                  </p>
+                  <p className="text-xs sm:text-sm font-black text-slate-950 group-hover:text-blue-700 truncate">
+                    {PARADISE_INFO.instagramIndustriesHandle}
                   </p>
                 </div>
               </a>
@@ -197,22 +222,24 @@ Mohon informasi ketersediaan & jadwal produksinya ya. Terima kasih!`;
               <div className="relative aspect-[16/9] sm:aspect-[21/9] lg:aspect-[16/9] w-full bg-slate-100">
                 <iframe
                   title="Peta Lokasi Paradise Sablon & Konveksi Toroh Grobogan"
-                  src="https://maps.google.com/maps?q=Tunggak,+Kec.+Toroh,+Kabupaten+Grobogan,+Jawa+Tengah&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src={PARADISE_INFO.googleMapsEmbedQuery}
                   className="w-full h-full border-0"
                   loading="lazy"
                   allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
                 />
               </div>
 
-              <div className="p-3 bg-white text-xs text-slate-600 flex items-center justify-between border-t border-blue-100">
-                <span className="font-semibold text-slate-700">Titik: Krenekan, Tunggak, Toroh, Grobogan</span>
+              <div className="p-3 bg-white text-xs text-slate-600 flex flex-wrap items-center justify-between gap-2 border-t border-blue-100">
+                <span className="font-semibold text-slate-700">Titik: Paradise Sablon &amp; Konveksi, Toroh, Grobogan</span>
                 <a
                   href={PARADISE_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-700 hover:text-red-600 font-bold"
+                  className="text-blue-700 hover:text-red-600 font-bold inline-flex items-center gap-1"
                 >
-                  https://maps.app.goo.gl/GTPNvdQ7xi2axnde6
+                  <span>Buka Titik Maps Resmi</span>
+                  <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
             </div>

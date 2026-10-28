@@ -32,10 +32,12 @@ export const PARADISE_INFO = {
   shortDesc: "Pusat pembuatan kaos custom, seragam kantor/PDH, polo shirt, jaket hoodie, dan jersey olahraga dengan sablon plastisol presisi, DTF tajam, dan jahitan kualitas distro.",
   address: "RXP6+GRC, Kernekan, Krenekan, Tunggak, Kec. Toroh, Kabupaten Grobogan, Jawa Tengah 58171",
   plusCode: "RXP6+GRC",
-  googleMapsUrl: "https://maps.app.goo.gl/GTPNvdQ7xi2axnde6",
-  googleMapsEmbedQuery: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15837.245842875152!2d110.9080!3d-7.1432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70b79e7be94bb1%3A0x8cf218f0f836da16!2sTunggak%2C%20Toroh%2C%20Grobogan%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid",
+  googleMapsUrl: "https://www.google.com/maps/place/Paradise+Sablon+%26+Koveksi/@-7.1636927,110.6571323,17z/data=!3m1!4b1!4m6!3m5!1s0x2e70afb261d9fda1:0x12e5f016ba399695!8m2!3d-7.1636927!4d110.6571323!16s%2Fg%2F11wsp0g5j1",
+  googleMapsEmbedQuery: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253355.10357741904!2d110.65713229453128!3d-7.163692700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70afb261d9fda1%3A0x12e5f016ba399695!2sParadise%20Sablon%20%26%20Koveksi!5e0!3m2!1sid!2sid!4v1793168026531!5m2!1sid!2sid",
   instagramHandle: "@paradise.sablon",
   instagramUrl: "https://www.instagram.com/paradise.sablon",
+  instagramIndustriesHandle: "@paradise.industriess",
+  instagramIndustriesUrl: "https://www.instagram.com/paradise.industriess/",
   whatsappNumber: "+62 895-3134-2018",
   whatsappRaw: "6289531342018",
   operatingHours: {
@@ -88,7 +90,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     minOrder: "12 pcs (Bisa satuan untuk DTF)",
     leadTime: "4 - 7 hari kerja",
     startingPrice: "Rp 45.000",
-    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop",
+    image: "/product/sablon-kaos-distro.png",
     features: [
       "Jahit rantai pundak & stik leher rapat",
       "Kain 100% katun murni adem menyerap keringat",
@@ -265,14 +267,14 @@ export const FABRIC_GUIDE = [
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "p1",
-    title: "Kaos Komunitas Motor RX King Grobogan",
+    title: "Kaos Komunitas UNITY UTARA 23 Grobogan",
     category: "kaos",
     categoryLabel: "Kaos Distro",
-    client: "Komunitas Rider Grobogan",
+    client: "Komunitas Grobogan",
     technique: "Plastisol Raster Depan-Belakang",
     material: "Cotton Combed 24s Hitam Reaktif",
     quantity: "150 pcs",
-    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
+    image: "/product/unity-ultra-23.png",
     tags: ["Plastisol", "Combed 24s", "Komunitas"]
   },
   {
@@ -332,7 +334,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     technique: "Sablon Rubber Matsui Lembut A3",
     material: "Cotton Combed 30s Misty Grey",
     quantity: "200 pcs",
-    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
+    image: "/product/kaos-reuni.png",
     tags: ["Rubber", "Combed 30s", "Reuni"]
   }
 ];

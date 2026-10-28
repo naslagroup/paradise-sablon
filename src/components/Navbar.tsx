@@ -39,15 +39,28 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <a 
-              href={PARADISE_INFO.instagramUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-blue-100 hover:text-white transition-colors"
-            >
-              <InstagramIcon className="w-3.5 h-3.5 text-pink-300" />
-              <span className="hidden sm:inline">{PARADISE_INFO.instagramHandle}</span>
-            </a>
+            <div className="flex items-center gap-2">
+              <a 
+                href={PARADISE_INFO.instagramUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-blue-100 hover:text-white transition-colors"
+                title="Instagram Sablon"
+              >
+                <InstagramIcon className="w-3.5 h-3.5 text-pink-300" />
+                <span className="hidden sm:inline">{PARADISE_INFO.instagramHandle}</span>
+              </a>
+              <span className="hidden md:inline text-blue-400/60">•</span>
+              <a 
+                href={PARADISE_INFO.instagramIndustriesUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hidden md:inline-flex items-center gap-1 text-blue-200 hover:text-white transition-colors"
+                title="Instagram Industries"
+              >
+                <span>{PARADISE_INFO.instagramIndustriesHandle}</span>
+              </a>
+            </div>
             <a 
               href={waLink} 
               target="_blank" 

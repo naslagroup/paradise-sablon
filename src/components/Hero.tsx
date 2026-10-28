@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, Calculator, MapPin, ShieldCheck, Sparkles, CheckCircle2, Clock, Award, Zap } from 'lucide-react';
 import { PARADISE_INFO } from '../data/paradiseData';
+import { InstagramPostEmbed } from './InstagramPostEmbed';
 
 export const Hero: React.FC = () => {
   const waLink = `https://wa.me/${PARADISE_INFO.whatsappRaw}?text=${encodeURIComponent('Halo Paradise Sablon & Konveksi, saya tertarik untuk memesan sablon/konveksi. Mohon info pricelist & konsultasi...')}`;
@@ -104,27 +105,9 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer Glow Card with Blue outline and White base */}
-              <div className="relative rounded-2xl bg-white p-3.5 sm:p-4 shadow-xl border-2 border-blue-600/30 overflow-hidden">
-                {/* Main Hero Visual Image */}
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-slate-900 border border-blue-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop"
-                    alt="Produksi Sablon Kaos Paradise Sablon Toroh"
-                    className="w-full h-full object-cover brightness-95 hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-black/20 to-transparent" />
-                  
-                  {/* Floating Tags on Image */}
-                  <div className="absolute top-3 left-3 bg-blue-900/90 backdrop-blur-md px-3 py-1 rounded-full text-white text-[11px] font-bold flex items-center gap-1.5 border border-white/20">
-                    <Sparkles className="w-3.5 h-3.5 text-red-400" />
-                    <span>Workshop Resmi Toroh</span>
-                  </div>
-
-                  <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <p className="text-xs font-bold text-red-400">Hasil Produksi Asli</p>
-                    <p className="text-sm font-black tracking-tight">Sablon Presisi • Warna Solid • Awet</p>
-                  </div>
-                </div>
+              <div className="relative rounded-2xl bg-white p-3.5 sm:p-4 shadow-xl border-2 border-blue-600/30">
+                {/* Instagram Live Post Embed replacing previous placeholder image */}
+                <InstagramPostEmbed postUrl="https://www.instagram.com/p/DZMpV4SkUCJ/" />
 
                 {/* Sub-cards / Value Highlights */}
                 <div className="grid grid-cols-2 gap-2.5 mt-3">

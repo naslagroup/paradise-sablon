@@ -47,7 +47,25 @@ export const Footer: React.FC = () => {
 
               <div className="flex items-center gap-2 text-white">
                 <InstagramIcon className="w-4 h-4 text-red-400 shrink-0" />
-                <span className="text-blue-100">{PARADISE_INFO.instagramHandle}</span>
+                <div className="flex items-center gap-2 text-blue-100 flex-wrap">
+                  <a
+                    href={PARADISE_INFO.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline transition-colors"
+                  >
+                    {PARADISE_INFO.instagramHandle}
+                  </a>
+                  <span className="text-blue-300">•</span>
+                  <a
+                    href={PARADISE_INFO.instagramIndustriesUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:underline transition-colors"
+                  >
+                    {PARADISE_INFO.instagramIndustriesHandle}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -143,13 +161,27 @@ export const Footer: React.FC = () => {
       {/* Bottom Copyright & Back to Top */}
       <div className="bg-blue-950 border-t border-blue-800/80 py-4 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-blue-200">
-          <p>
-            &copy; {currentYear} {PARADISE_INFO.name}. Hak Cipta Dilindungi. Krenekan, Tunggak, Kec. Toroh, Kab. Grobogan.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-center sm:text-left">
+            <p>
+              &copy; {currentYear} {PARADISE_INFO.name}. Hak Cipta Dilindungi. Krenekan, Tunggak, Kec. Toroh, Kab. Grobogan.
+            </p>
+            <span className="hidden sm:inline text-blue-400">•</span>
+            <p className="text-blue-200">
+              Created by{' '}
+              <a
+                href="https://ahmad.shofinasla.workers.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold underline underline-offset-2 hover:text-red-400 transition-colors"
+              >
+                Ahmad Shofi Nasla
+              </a>
+            </p>
+          </div>
 
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center gap-1.5 text-blue-200 hover:text-white font-bold transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-blue-200 hover:text-white font-bold transition-colors cursor-pointer shrink-0"
           >
             <span>Kembali ke Atas</span>
             <ArrowUp className="w-3.5 h-3.5 text-red-400" />
